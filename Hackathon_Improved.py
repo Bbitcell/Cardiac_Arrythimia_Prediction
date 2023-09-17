@@ -11,7 +11,10 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
-data = pd.read_csv(r"E:\Users\Omar\Downloads\arrhythmia_csv.csv")
+
+
+# https://datahub.io/machine-learning/arrhythmia
+data = pd.read_csv("arrhythmia_csv.csv")
 
 data = data[ data["class"].isin([1, 2 ,5, 6])]
 
